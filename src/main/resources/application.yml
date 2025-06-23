@@ -24,7 +24,7 @@ wx:
     configs:
       - appId: wx129306a8a645f557 # 第一个公众号的appid
         secret: ae4bbc435fd1adab609edc2143485e01 # 公众号的appsecret
-        token: 111 # 接口配置里的Token值
+        token: vbszl # 接口配置里的Token值
         aesKey: 111 # 接口配置里的EncodingAESKey值
       - appId: 2222 # 第二个公众号的appid，以下同上
         secret: 1111
@@ -32,3 +32,6 @@ wx:
         aesKey: 111
 wechat:
   token: vbszl
+  appid: wx129306a8a645f557
+  secret: ae4bbc435fd1adab609edc2143485e01
+  aseKey: 1111
