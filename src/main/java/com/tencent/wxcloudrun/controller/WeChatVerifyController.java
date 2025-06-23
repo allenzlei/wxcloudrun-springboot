@@ -43,18 +43,18 @@ public class WeChatVerifyController {
     }
 
     // 微信服务器验证
-    @GetMapping
-    public String validateServer(
-            @RequestParam("signature") String signature,
-            @RequestParam("timestamp") String timestamp,
-            @RequestParam("nonce") String nonce,
-            @RequestParam("echostr") String echostr) {
-
-        if (checkSignature(signature, timestamp, nonce)) {
-            return echostr;
-        }
-        return "Verification failed";
-    }
+//    @GetMapping
+//    public String validateServer(
+//            @RequestParam("signature") String signature,
+//            @RequestParam("timestamp") String timestamp,
+//            @RequestParam("nonce") String nonce,
+//            @RequestParam("echostr") String echostr) {
+//
+//        if (checkSignature(signature, timestamp, nonce)) {
+//            return echostr;
+//        }
+//        return "Verification failed";
+//    }
     public boolean checkSignature(String signature, String timestamp, String nonce) {
         String[] arr = new String[]{token, timestamp, nonce};
         Arrays.sort(arr);
