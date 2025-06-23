@@ -15,3 +15,18 @@ spring:
 
 mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml
+wx:
+  mp:
+    useRedis: false
+    redisConfig:
+      host: 127.0.0.1
+      port: 6379
+    configs:
+      - appId: wx129306a8a645f557 # 第一个公众号的appid
+        secret: ae4bbc435fd1adab609edc2143485e01 # 公众号的appsecret
+        token: 111 # 接口配置里的Token值
+        aesKey: 111 # 接口配置里的EncodingAESKey值
+      - appId: 2222 # 第二个公众号的appid，以下同上
+        secret: 1111
+        token: 111
+        aesKey: 111
