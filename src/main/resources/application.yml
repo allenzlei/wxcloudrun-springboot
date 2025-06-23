@@ -22,14 +22,10 @@ wx:
       host: 127.0.0.1
       port: 6379
     configs:
-      - appId: wx129306a8a645f557 # 第一个公众号的appid
-        secret: ae4bbc435fd1adab609edc2143485e01 # 公众号的appsecret
-        token: vbszl # 接口配置里的Token值
-        aesKey: 111 # 接口配置里的EncodingAESKey值
-      - appId: 2222 # 第二个公众号的appid，以下同上
-        secret: 1111
-        token: 111
-        aesKey: 111
+      - appId: wx129306a8a645f557  # 唯一公众号配置
+        secret: ae4bbc435fd1adab609edc2143485e01
+        token: vbszl
+        aesKey: abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLM  # 需替换为43位合规值
 wechat:
   token: vbszl
   appid: wx129306a8a645f557
